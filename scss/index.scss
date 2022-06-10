@@ -1,0 +1,134 @@
+// ===== FONT GOGGLE =====
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+// ===== VARIABLE SCSS =====
+// header height
+$header-height: 6rem;
+
+// color palette
+$black-color: #212529;
+$grey-color: #6c757d;
+$purple-color: #7a6beb;
+$white-color: #ffffff;
+
+// font global
+$font-body: "Poppins", sans-serif;
+$font-title: "Space Grotesk", sans-serif;
+
+// font weight
+$font-reguler: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+// margin
+$margin-0-5: 0.5rem;
+$margin-1: 1rem;
+$margin-1-5: 1.5rem;
+$margin-2: 2rem;
+$margin-2-5: 2.5rem;
+$margin-3: 3rem;
+$margin-3-5: 3.5rem;
+$margin-4: 4rem;
+
+// z-index
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// line-height
+$leading-title: 155%;
+$leading-text: 185%;
+
+// transition
+$transition-400: 0.4s;
+
+// ===== RESET & BASE =====
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  font-weight: $font-reguler;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+input,
+button {
+  font-family: $font-body;
+  font-weight: $font-reguler;
+  outline: none;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// ===== REUSABLE CSS CLASS =====
+.section {
+  padding: 8rem 0 4rem;
+
+  &-title {
+    font-family: $font-title;
+    font-weight: $font-bold;
+    font-size: 24px;
+    color: $black-color;
+    line-height: $leading-title;
+    margin-bottom: 1rem;
+  }
+
+  &-text {
+    font-size: 15px;
+    color: $grey-color;
+    line-height: $leading-text;
+    margin-bottom: 2rem;
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: $black-color;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: $font-medium;
+    color: $white-color;
+  }
+
+  &-icon {
+    display: inline-flex;
+    font-size: 1.3rem;
+    color: $white-color;
+  }
+}
+
+.container {
+  max-width: 1120px;
+  width: calc(100% - 3rem);
+  margin: 0 $margin-1-5;
+}
+
+.grid {
+  display: grid;
+
+  &-gap {
+    gap: 3rem;
+  }
+}
