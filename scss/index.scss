@@ -446,3 +446,60 @@ img {
     }
   }
 }
+
+// ===== FAQS SECTION =====
+.faqs {
+  &__button {
+    display: inline-flex;
+  }
+
+  &__accordion {
+    display: grid;
+
+    &-item {
+      background-color: $white-color;
+      border-bottom: 2px solid $black-color;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1.5rem 0;
+      cursor: pointer;
+    }
+
+    &-title {
+      font-family: $font-title;
+      font-size: 17px;
+      font-weight: $font-bold;
+      color: $black-color;
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1.5rem;
+      color: $black-color;
+      transition: $transition-400;
+    }
+
+    &-content {
+      overflow: hidden;
+      height: 0;
+      transition: $transition-400;
+    }
+
+    &-text {
+      font-size: 14px;
+      color: $grey-color;
+      line-height: $leading-text;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  // accordion open
+  .accordion-open .faqs__accordion-icon {
+    transform: rotate(45deg);
+  }
+}
