@@ -275,3 +275,37 @@ img {
     box-shadow: 0 12px 20px rgba($color: #fe76dd, $alpha: 0.2);
   }
 }
+
+// ===== TOOLS SECTION =====
+.tools {
+  &__title {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 0.85fr));
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 2rem;
+
+    &-title {
+      font-family: $font-title;
+      font-size: 20px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      margin-bottom: 1rem;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+      line-height: $leading-text;
+    }
+  }
+}
