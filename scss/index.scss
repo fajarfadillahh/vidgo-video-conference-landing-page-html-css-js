@@ -349,3 +349,25 @@ img {
     }
   }
 }
+
+// ===== INTEGRATED SECTION =====
+.integrated {
+  &__data,
+  &__img {
+    justify-self: center;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 15px;
+    font-weight: $font-medium;
+    color: $black-color;
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1.2rem;
+    }
+  }
+}
