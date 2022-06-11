@@ -503,3 +503,58 @@ img {
     transform: rotate(45deg);
   }
 }
+
+// ===== FOOTER SECTION =====
+.footer {
+  &__container {
+    gap: 6rem;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2.5rem;
+  }
+
+  &__data {
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+      line-height: $leading-text;
+      margin-top: 4px;
+    }
+  }
+
+  &__content {
+    &-title {
+      font-family: $font-title;
+      font-size: 18px;
+      font-weight: $font-bold;
+      color: $black-color;
+      margin-bottom: $margin-1;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &-link {
+      font-size: 15px;
+      color: $grey-color;
+
+      &:hover {
+        color: $black-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__copy {
+    text-align: center;
+    font-size: 15px;
+    color: $grey-color;
+    line-height: $leading-text;
+  }
+}
