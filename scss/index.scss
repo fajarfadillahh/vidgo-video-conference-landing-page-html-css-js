@@ -653,6 +653,10 @@ img {
 
 // width 968px
 @media screen and (min-width: 968px) {
+  .container {
+    margin: 0 auto;
+  }
+
   .section-title {
     font-size: 36px;
   }
@@ -719,5 +723,44 @@ img {
 
   .footer__content {
     justify-self: center;
+  }
+}
+
+// width 1120px
+@media screen and (min-width: 1120px) {
+  .section-title {
+    font-size: 42px;
+  }
+
+  .header__list {
+    gap: 2rem;
+  }
+
+  .home {
+    &__container {
+      padding-top: 5rem;
+    }
+
+    &__data {
+      width: 600px;
+    }
+
+    &__img {
+      width: 900px;
+    }
+  }
+
+  .feature__group {
+    gap: 10rem;
+  }
+
+  .tools__content-title,
+  .feature__item-title {
+    font-size: 24px;
+  }
+
+  .faqs__accordion-title,
+  .footer__content-title {
+    font-size: 20px;
   }
 }
