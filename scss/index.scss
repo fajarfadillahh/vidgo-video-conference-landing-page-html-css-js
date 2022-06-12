@@ -593,3 +593,19 @@ img {
     bottom: 3rem;
   }
 }
+
+// ===== MEDIA QUERIES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .home__data,
+  .home__img,
+  .feature__wrapper,
+  .feature__img,
+  .integrated__data,
+  .integrated__img,
+  .faqs__data,
+  .faqs__accordion {
+    width: 400px;
+    justify-self: center;
+  }
+}
