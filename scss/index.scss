@@ -764,9 +764,19 @@ img {
     font-size: 20px;
   }
 
+  .faqs__text {
+    width: 280px;
+  }
+
   .footer__container {
     gap: 10rem;
   }
+}
+
+// ===== SCROLL BAR =====
+::selection {
+  background-color: rgba($color: #212529, $alpha: 0.5);
+  color: $white-color;
 }
 
 // ===== SCROLL BAR =====
